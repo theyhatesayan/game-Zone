@@ -1,0 +1,134 @@
+@media (max-width: 768px){
+
+  .app{
+    padding: 20px;
+  }
+
+  .header h1{
+    font-size: 28px;
+  }
+
+  .header p{
+    font-size: 13px;
+  }
+
+  .tabs{
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 20px;
+  }
+
+  .indicator{
+    display: none;
+  }
+
+  .tab{
+    border-radius: 15px;
+    background: rgba(255,255,255,0.05);
+  }
+
+  .tab.active{
+    background: #00f2fe;
+    color: #000;
+  }
+
+  .game{
+    padding: 18px;
+  }
+
+  h2{
+    font-size: 20px;
+  }
+
+  .actions{
+    flex-direction: column;
+  }
+
+  button{
+    width: 100%;
+  }
+
+  .rps{
+    gap: 10px;
+  }
+
+  .rps button{
+    width: 60px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+}
+
+@media (max-width: 480px){
+
+  .app{
+    padding: 15px;
+  }
+
+  .header h1{
+    font-size: 24px;
+  }
+
+  .header p{
+    font-size: 12px;
+  }
+
+  h2{
+    font-size: 18px;
+  }
+
+  input,
+  select{
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  button{
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .rps button{
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .grid{
+    grid-template-columns: repeat(2,1fr);
+    gap: 8px;
+  }
+
+  .card{
+    height: 60px;
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 350px){
+
+  .header h1{
+    font-size: 20px;
+  }
+
+  .tabs{
+    gap: 5px;
+  }
+
+  .tab{
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .card{
+    height: 50px;
+    font-size: 18px;
+  }
+
+}

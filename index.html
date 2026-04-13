@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayan's Game Zone</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="query.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+</head>
+
+<body>
+
+<div class="app" data-aos="zoom-in">
+
+  <header class="header">
+    <h1 data-aos="fade-down" data-aos-duration="800">🎮 Ayan's Game Zone</h1>
+    <p data-aos="fade-up" data-aos-delay="200">Play & Chill 😎</p>
+  </header>
+
+  <nav class="tabs" data-aos="fade-up" data-aos-delay="300">
+    <button class="tab active" data-game="guess">Guess</button>
+    <button class="tab" data-game="rps">RPS</button>
+    <button class="tab" data-game="memory">Memory</button>
+    <div class="indicator"></div>
+  </nav>
+
+  <main class="content">
+
+    <section id="guess" class="game active" data-aos="fade-up" data-aos-delay="400">
+      <h2>Guess Number</h2>
+
+      <select id="difficulty">
+        <option value="10">Easy (1-10)</option>
+        <option value="50">Medium (1-50)</option>
+        <option value="100">Hard (1-100)</option>
+      </select>
+
+      <input id="guessInput" type="number" placeholder="Enter number">
+
+      <div class="actions">
+        <button id="checkBtn">Check</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+
+      <div class="feedback">
+        <p id="gResult"></p>
+        <p id="gScore"></p>
+      </div>
+    </section>
+
+    <section id="rps" class="game" data-aos="fade-up" data-aos-delay="400">
+      <h2>Rock Paper Scissors</h2>
+
+      <div class="rps">
+        <button data-choice="rock">✊</button>
+        <button data-choice="paper">✋</button>
+        <button data-choice="scissors">✌️</button>
+      </div>
+
+      <p id="rpsResult"></p>
+      <p id="rpsScore"></p>
+    </section>
+
+    <section id="memory" class="game" data-aos="fade-up" data-aos-delay="400">
+      <h2>Memory Game</h2>
+
+      <button id="restartMemory">Restart</button>
+
+      <div id="grid" class="grid"></div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="./index.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+<script>
+  AOS.init({
+    duration: 900,
+    once: true,
+    easing: "ease-in-out"
+  });
+</script>
+
+</body>
+</html>
