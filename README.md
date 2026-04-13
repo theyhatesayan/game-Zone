@@ -39,6 +39,9 @@ Game-Zone/
 * Multiplayer support
 * Sound effects & background music
 
+## live
+  https://game-zone-sepia.vercel.app/
+
 ## 👨‍💻 Author
 
 **Ayan**
